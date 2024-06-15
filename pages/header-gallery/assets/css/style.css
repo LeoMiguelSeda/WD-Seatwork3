@@ -8,6 +8,17 @@ a {
     text-decoration: none;
 }
 
+h1 {
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 30px;
+  
+  
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -32,14 +43,10 @@ header.design-one {
     padding: 0.7rem 10vw;
     background: #ffffff;
   
-    & > img.company-logo {
+    & > img.company-logoo {
       height: 50px;
-      cursor: pointer;
-      transition: 0.5s ease-in;
       
-      &:hover {
-        transform: scale(1.5);
-      }
+      
     }
   
     & > nav.navigation {
@@ -71,18 +78,18 @@ header.design-two {
       align-items: center;
       gap: 1rem;
   
-      & > a.navigation-content {
+      & > a.navigation-contentt {
         font-weight: 600;
         font-size: 1.1rem;
         color: #ffffff;
         border: 1px solid white;
         font-style: italic;
-        transition: 0.5s ease;
+        /* transition: 0.5s ease;
 
         &:hover {
           transform: scale(1.5);
           color: #00ff00;
-        }
+        } */
 
         
       }
@@ -153,17 +160,17 @@ header.another {
 
         
       
-      & > a.navigation-content {
+      & > a.navigation-contenttt {
         font-weight: 600;
         font-size: 1.1rem;
         color: #000000;
         position: relative;
         padding-bottom: 5px;
-        transition: color 0.3s ease-in-out;
+        /* transition: color 0.3s ease-in-out;
 
       &:hover {
        animation: Breathing 5s infinite;
-      }
+      } */
 
       &:after {
         content: '';
@@ -172,7 +179,7 @@ header.another {
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: #0000ff;
+        /* background-color: #0000ff; */
         transition: width 0.3s ease-in-out;
       }
 
@@ -219,13 +226,13 @@ header.design-four {
   padding: 0.7rem 10vw;
   background: #000000;
 
-  & > img.company-logo {
+  & > img.company-logooo {
     height: 100px;
-    -webkit-transition: -webkit-transform 1.0s;
+    /* -webkit-transition: -webkit-transform 1.0s;
 
     &:hover {
       -webkit-transform: rotate(360deg);
-    }
+    } */
   }
   
   & > nav.navigation {
@@ -233,16 +240,16 @@ header.design-four {
     align-items: center;
     gap: 1rem;
     
-    & > a.navigation-content {
+    & > a.navigation-contentttt {
       font-weight: 600;
       font-size: 1.1rem;
       color: white;
-      animation: Breathing 5.0s infinite;
+      /* animation: Breathing 5.0s infinite;
       transition: color 0.3s ease-in-out;
 
       &:hover {
         color: #ffffff;
-      }
+      } */
     }
   }
 }
@@ -266,15 +273,54 @@ header.design-five {
   padding: 0.7rem 10vw;
   background: #ffffff;
 
-  & > img.company-logo {
+  & > img.company-logoooo {
     height: 100px;
-    cursor: pointer;
+    /* cursor: pointer;
     animation:  0.5s ease;
     
 
     &:hover {
       transform: scale(1.1);
       animation: bounce 1s;
+    } */
+  }
+
+  & > nav.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & > a.navigation-contenttttt {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      /* transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        transform: scale(1.1);
+        animation: bounce 1s;
+      } */
+    }
+  }
+}
+
+header.design-one {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 10vw;
+  background: #ffffff;
+
+  & > img.company-logo {
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    
+    &:hover {
+      transform: scale(1.5);
     }
   }
 
@@ -287,17 +333,803 @@ header.design-five {
       font-weight: 600;
       font-size: 1.1rem;
       color: black;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        transform: scale(1.1);
-        animation: bounce 1s;
-      }
     }
   }
+}
+
+header.design-two {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 10vw;
+  background: #000000;
+
+  & > img.company-logo {
+    height: 100px;
+  }
+
+  & > nav.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & > a.navigation-content {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #ffffff;
+      border: 1px solid white;
+      font-style: italic;
+      transition: 0.5s ease;
+
+      &:hover {
+        transform: scale(1.5);
+        color: #00ff00;
+      }
+
+      
+    }
+  }
+}
+
+@keyframes Breathing {
+0% {
+  color: #ff0000;
+}
+16% {
+  color: #ff9900;
+}
+33% {
+  color: #ffff00;
+}
+50% {
+  color: #00ff00;
+}
+66% {
+  color: #0000ff;
+}
+83% {
+  color: #4b0082;
+}
+100% {
+  color: #ff00ff;
+}
+}
+
+
+header.design-three {
+  border-radius: 50px;
+  width: 100vw;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 0.7rem 10vw;
+  background: #ffffff;
+  border: #000000;
+  
+header.another {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  border-color: #000000;
+  padding: 0.5rem 10vw;
+  border-radius: 50px;
+
+
+
+  & > img.company-logo {
+      height: 100px;
+      justify-content: flex-start;
+      margin-right: 70px;
+      padding-right: 35%;
+      /* outline: 3px dotted red; */
+      
+      
+  }
+
+  & > nav.navigation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end
+      text-align: right;
+      gap: 1rem;
+
+      
+    
+    & > a.navigation-content {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #000000;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease-in-out;
+
+    &:hover {
+     animation: Breathing 5s infinite;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #0000ff;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      width: 100%;
+    }
+    }
+  }
+}
+}
+
+@keyframes Breathing {
+0% {
+  color: #ff0000;
+}
+16% {
+  color: #ff9900;
+}
+33% {
+  color: #ffff00;
+}
+50% {
+  color: #00ff00;
+}
+66% {
+  color: #0000ff;
+}
+83% {
+  color: #4b0082;
+}
+100% {
+  color: #ff00ff;
+}
+}
+
+
+
+header.design-four {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #000000;
+
+& > img.company-logo {
+  height: 100px;
+  -webkit-transition: -webkit-transform 1.0s;
+
+  &:hover {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    animation: Breathing 5.0s infinite;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+}
+
+@keyframes bounce {
+0%, 20%, 50% {
+  transform: translateY(0);
+}
+40% {
+  transform: translateY(-10px);
+}
+60% {
+  transform: translateY(-5px);
+}
+}
+
+header.design-five {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #ffffff;
+
+& > img.company-logo {
+  height: 100px;
+  cursor: pointer;
+  animation:  0.5s ease;
+  
+
+  &:hover {
+    transform: scale(1.1);
+    animation: bounce 1s;
+  }
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: scale(1.1);
+      animation: bounce 1s;
+    }
+  }
+}
+}
+
+header.design-one {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 10vw;
+  background: #ffffff;
+
+  & > img.company-logo {
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  & > nav.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & > a.navigation-content {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: black;
+    }
+  }
+}
+
+header.design-two {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 10vw;
+  background: #000000;
+
+  & > img.company-logo {
+    height: 100px;
+  }
+
+  & > nav.navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & > a.navigation-content {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #ffffff;
+      border: 1px solid white;
+      font-style: italic;
+      transition: 0.5s ease;
+
+      &:hover {
+        transform: scale(1.5);
+        color: #00ff00;
+      }
+
+      
+    }
+  }
+}
+
+@keyframes Breathing {
+0% {
+  color: #ff0000;
+}
+16% {
+  color: #ff9900;
+}
+33% {
+  color: #ffff00;
+}
+50% {
+  color: #00ff00;
+}
+66% {
+  color: #0000ff;
+}
+83% {
+  color: #4b0082;
+}
+100% {
+  color: #ff00ff;
+}
+}
+
+
+header.design-three {
+  border-radius: 50px;
+  width: 100vw;
+  display: flex;
+  /* justify-content: space-around; */
+  padding: 0.7rem 10vw;
+  background: #ffffff;
+  border: #000000;
+  
+header.another {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  border-color: #000000;
+  padding: 0.5rem 10vw;
+  border-radius: 50px;
+
+
+
+  & > img.company-logo {
+      height: 100px;
+      justify-content: flex-start;
+      margin-right: 70px;
+      padding-right: 35%;
+      /* outline: 3px dotted red; */
+      
+      
+  }
+
+  & > nav.navigation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end
+      text-align: right;
+      gap: 1rem;
+
+      
+    
+    & > a.navigation-content {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #000000;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease-in-out;
+
+    &:hover {
+     animation: Breathing 5s infinite;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #0000ff;
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after,
+    &:focus::after,
+    &:active::after {
+      width: 100%;
+    }
+    }
+  }
+}
+}
+
+@keyframes Breathing {
+0% {
+  color: #ff0000;
+}
+16% {
+  color: #ff9900;
+}
+33% {
+  color: #ffff00;
+}
+50% {
+  color: #00ff00;
+}
+66% {
+  color: #0000ff;
+}
+83% {
+  color: #4b0082;
+}
+100% {
+  color: #ff00ff;
+}
+}
+
+
+
+header.design-four {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #000000;
+
+& > img.company-logo {
+  height: 100px;
+  -webkit-transition: -webkit-transform 1.0s;
+
+  &:hover {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+    animation: Breathing 5.0s infinite;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+}
+
+@keyframes bounce {
+0%, 20%, 50% {
+  transform: translateY(0);
+}
+40% {
+  transform: translateY(-10px);
+}
+60% {
+  transform: translateY(-5px);
+}
+}
+
+header.design-five {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #ffffff;
+
+& > img.company-logo {
+  height: 100px;
+  cursor: pointer;
+  animation:  0.5s ease;
+  
+
+  &:hover {
+    transform: scale(1.1);
+    animation: bounce 1s;
+  }
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+      transform: scale(1.1);
+      animation: bounce 1s;
+    }
+  }
+}
+}
+
+header.design-six {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #ffffff;
+
+& > img.company-logo {
+  height: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: black;
+  }
+}
+}
+
+header.design-seven {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #000000;
+
+& > img.company-logo {
+  height: 100px;
+}
+
+& > nav.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: 1px solid white;
+    font-style: italic;
+    transition: 0.5s ease;
+
+    &:hover {
+      transform: scale(1.5);
+      color: #00ff00;
+    }
+
+    
+  }
+}
+}
+
+@keyframes Breathing {
+0% {
+color: #ff0000;
+}
+16% {
+color: #ff9900;
+}
+33% {
+color: #ffff00;
+}
+50% {
+color: #00ff00;
+}
+66% {
+color: #0000ff;
+}
+83% {
+color: #4b0082;
+}
+100% {
+color: #ff00ff;
+}
+}
+
+
+header.design-eight {
+border-radius: 50px;
+width: 100vw;
+display: flex;
+/* justify-content: space-around; */
+padding: 0.7rem 10vw;
+background: #ffffff;
+border: #000000;
+
+header.another {
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+display: flex;
+justify-content: flex-end;
+width: 100vw;
+border-color: #000000;
+padding: 0.5rem 10vw;
+border-radius: 50px;
+
+
+
+& > img.company-logo {
+    height: 100px;
+    justify-content: flex-start;
+    margin-right: 70px;
+    padding-right: 35%;
+    /* outline: 3px dotted red; */
+    
+    
+}
+
+& > nav.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+    text-align: right;
+    gap: 1rem;
+
+    
+  
+  & > a.navigation-content {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000000;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+
+  &:hover {
+   animation: Breathing 5s infinite;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0000ff;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    width: 100%;
+  }
+  }
+}
+}
+}
+
+@keyframes Breathing {
+0% {
+color: #ff0000;
+}
+16% {
+color: #ff9900;
+}
+33% {
+color: #ffff00;
+}
+50% {
+color: #00ff00;
+}
+66% {
+color: #0000ff;
+}
+83% {
+color: #4b0082;
+}
+100% {
+color: #ff00ff;
+}
+}
+
+
+
+header.design-nine {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #000000;
+
+& > img.company-logo {
+height: 100px;
+-webkit-transition: -webkit-transform 1.0s;
+
+&:hover {
+  -webkit-transform: rotate(360deg);
+}
+}
+
+& > nav.navigation {
+display: flex;
+align-items: center;
+gap: 1rem;
+
+& > a.navigation-content {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+  animation: Breathing 5.0s infinite;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+}
+}
+
+@keyframes bounce {
+0%, 20%, 50% {
+transform: translateY(0);
+}
+40% {
+transform: translateY(-10px);
+}
+60% {
+transform: translateY(-5px);
+}
+}
+
+header.design-ten {
+width: 100vw;
+display: flex;
+justify-content: space-between;
+padding: 0.7rem 10vw;
+background: #ffffff;
+
+& > img.company-logo {
+height: 100px;
+cursor: pointer;
+animation:  0.5s ease;
+
+
+&:hover {
+  transform: scale(1.1);
+  animation: bounce 1s;
+}
+}
+
+& > nav.navigation {
+display: flex;
+align-items: center;
+gap: 1rem;
+
+& > a.navigation-content {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+    animation: bounce 1s;
+  }
+}
+}
 }
 
 
