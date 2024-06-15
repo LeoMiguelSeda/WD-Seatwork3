@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/LeoMiguelSeda/WD-Seatwork33sfdfdgfdgdv">
+  <a href="https://github.com/LeoMiguelSeda/WD-Seatwork3">
     <img src="./assets/img/Profile.png" alt="Profile" width="300" height="400">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
