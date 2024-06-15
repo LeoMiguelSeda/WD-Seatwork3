@@ -4,8 +4,8 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/LeoMiguelSeda/WD-Seatwork3">
+    <img src="./assets/img/Profile.png" alt="Profile" width="300" height="400">
   </a>
   <h3 align="center">Seatwork 3: Footer & Header</h3>
 </div>
@@ -15,7 +15,7 @@
 
 <br />
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Seatwork-3)
+![](https://github.com/LeoMiguelSeda/WD-Seatwork3)
 
 ---
 
@@ -97,8 +97,4 @@ WD-ProjectName
 └─ readme.md
 ```
 
-## Resources
 
-| Title | Purpose | Link |
-|-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
