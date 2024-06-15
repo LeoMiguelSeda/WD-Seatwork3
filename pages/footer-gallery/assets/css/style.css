@@ -32,7 +32,8 @@ footer.design1 {
     justify-content: center;
     align-items: center;
     padding: 0.7rem 10vw;
-    background: #15c040;
+    background-color: #0093E9;
+    background-image: linear-gradient(147deg, #0093E9 0%, #80D0C7 100%);
 
     & > img.Logo {
         height: 150px;
@@ -137,18 +138,45 @@ footer.design2 {
             /* outline: 3px dotted red; */
         }
 
-        .button {
-            display: flex;
-            justify-content: center;
-            padding: 10px 10px;
-            background-color: #27ae60;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 20px;
-            margin-top: 3rem;
+        
+        
+        button {
             
-        }
+            --button_radius: 0.75em;
+            --button_color: #e8e8e8;
+            --button_outline_color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            margin-left: 10rem;
+            margin-top: 2rem;
+            border-radius: var(--button_radius);
+            background: var(--button_outline_color);
+            /* outline: 3px dotted red; */
+          }
+          
+          .button_top {
+            display: block;
+            box-sizing: border-box;
+            border: 2px solid var(--button_outline_color);
+            border-radius: var(--button_radius);
+            padding: 0.75em 1.5em;
+            /* margin-left: 1rem; */
+            background: var(--button_color);
+            color: var(--button_outline_color);
+            transform: translateY(-0.2em);
+            transition: transform 0.1s ease;
+          }
+          
+          button:hover .button_top {
+            
+            transform: translateY(-0.33em);
+          }
+          
+          button:active .button_top {
+            
+            transform: translateY(0);
+          }
 
         .contact-info {
             list-style: none;
@@ -165,10 +193,13 @@ footer.design2 {
 
         .social-icons {
             i {
+                display: flex;
+                align-self: center;
                 color: white;
                 font-size: 50px;
-                margin-left: 170px ;
+                margin-left: 180px ;
                 margin-bottom: 1rem;
+                margin-top: 1rem;
                 /* outline: 3px dotted red; */
             }
             
@@ -186,7 +217,10 @@ footer.design3 {
     justify-content: center;
     align-items: center;
     padding: 0.7rem 10vw;
-    background: #15c040;
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+
 
     & > img.Logo {
         height: 100px;
@@ -206,19 +240,12 @@ footer.design3 {
         & > a.nav.navigation-content {
             display: flex;
             align-items: flex-start;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #000000;
             position: relative;
             
-            /* padding-bottom: 5px; */
-            transition: color 5s ease;
+            
             
 
-            &:hover {
-                transform: scale(1.5);
-                color: red;
-            }
+            
         }
         .social-icons {
             display: flex;
@@ -252,7 +279,7 @@ footer.design3 {
 }
 
 footer.design4 {
-    background-color: #000;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     width: 100%;
 }
 
@@ -322,8 +349,11 @@ footer.design4 {
     margin: 0px 5px;
 }
 
+
+
 footer.design5 {
-    background-color: #000;
+    background-color: #0093E9;
+    background-image: linear-gradient(147deg, #0093E9 0%, #80D0C7 100%);
     width: 100%;
 }
 
